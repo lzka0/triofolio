@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern CV Portfolio</title>
+    <style>
+        /* Base Styles */
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 40px 20px;
+            color: #333;
+        }
+
+        .page-title {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #2c3e50;
+            font-weight: 300;
+            font-size: 2.5rem;
+        }
+
+        /* Container & Layout */
+        .cv-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Card Styles */
+        .cv-card {
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            width: 340px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .cv-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Header Styles */
+        .cv-header {
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .cv-header img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 4px solid rgba(255, 255, 255, 0.4);
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        .cv-header h2 {
+            margin: 0;
+            font-size: 1.6rem;
+            letter-spacing: 0.5px;
+        }
+
+        .cv-header p {
+            margin: 5px 0 0;
+            font-weight: 400;
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+
+        /* Content Styles */
+        .cv-content {
+            padding: 25px;
+        }
+
+        .section-title {
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #7f8c8d;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 8px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .cv-item {
+            margin-bottom: 18px;
+        }
+
+        .cv-item h4 {
+            margin: 0 0 4px;
+            font-size: 1.05rem;
+            color: #2c3e50;
+        }
+
+        .cv-item .date {
+            font-size: 0.8rem;
+            color: #95a5a6;
+            margin-bottom: 4px;
+            display: block;
+        }
+
+        .cv-item p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: #555;
+            line-height: 1.4;
+        }
+
+        /* Skills Tags */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .skill-tag {
+            background: #f0f2f5;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #555;
+            font-weight: 500;
+        }
+
+        /* * Person 1: Indigo & Purple (Software Engineer)
+         */
+        .theme-indigo .cv-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .theme-indigo .section-title {
+            border-bottom-color: #667eea;
+        }
+        .theme-indigo .skill-tag {
+            background: #eef2ff;
+            color: #5a67d8;
+        }
+
+        /* * Person 2: Teal & Mint (UX/UI Designer)
+         */
+        .theme-teal .cv-header {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        }
+        .theme-teal .section-title {
+            border-bottom-color: #11998e;
+        }
+        .theme-teal .skill-tag {
+            background: #e6fffa;
+            color: #0d9488;
+        }
+
+        /* * Person 3: Coral & Orange (Marketing Manager)
+         */
+        .theme-coral .cv-header {
+            background: linear-gradient(135deg, #f12711 0%, #f5af19 100%);
+        }
+        .theme-coral .section-title {
+            border-bottom-color: #f12711;
+        }
+        .theme-coral .skill-tag {
+            background: #fff5f5;
+            color: #e53e3e;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .cv-card {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="page-title">Meet Our Team</h1>
+
+    <div class="cv-container">
+
+        <div class="cv-card theme-indigo">
+            <div class="cv-header">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Alex&backgroundColor=b6e3f4" alt="Alex Profile">
+                <h2>Alex Morgan</h2>
+                <p>Senior Full-Stack Developer</p>
+            </div>
+            <div class="cv-content">
+                <h3 class="section-title">Experience</h3>
+                <div class="cv-item">
+                    <h4>TechNova Solutions</h4>
+                    <span class="date">2020 - Present</span>
+                    <p>Lead developer for enterprise web applications using React and Node.js.</p>
+                </div>
+                <div class="cv-item">
+                    <h4>CodeStream Inc.</h4>
+                    <span class="date">2017 - 2020</span>
+                    <p>Developed RESTful APIs and maintained scalable cloud infrastructure.</p>
+                </div>
+
+                <h3 class="section-title">Education</h3>
+                <div class="cv-item">
+                    <h4>B.S. Computer Science</h4>
+                    <span class="date">MIT | Class of 2017</span>
+                </div>
+
+                <h3 class="section-title">Skills</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">React</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">AWS</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="cv-card theme-teal">
+            <div class="cv-header">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Mia&backgroundColor=c0aede" alt="Mia Profile">
+                <h2>Mia Chen</h2>
+                <p>Lead UX/UI Designer</p>
+            </div>
+            <div class="cv-content">
+                <h3 class="section-title">Experience</h3>
+                <div class="cv-item">
+                    <h4>Creative Studio Agency</h4>
+                    <span class="date">2021 - Present</span>
+                    <p>Designing user-centric interfaces and establishing design systems for top clients.</p>
+                </div>
+                <div class="cv-item">
+                    <h4>Pixel Perfect</h4>
+                    <span class="date">2018 - 2021</span>
+                    <p>Conducted user research and designed high-fidelity wireframes and prototypes.</p>
+                </div>
+
+                <h3 class="section-title">Education</h3>
+                <div class="cv-item">
+                    <h4>B.A. Graphic Design</h4>
+                    <span class="date">Parsons School of Design | 2018</span>
+                </div>
+
+                <h3 class="section-title">Skills</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">Figma</span>
+                    <span class="skill-tag">Prototyping</span>
+                    <span class="skill-tag">User Research</span>
+                    <span class="skill-tag">Adobe CC</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="cv-card theme-coral">
+            <div class="cv-header">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Marcus&backgroundColor=ffdfbf" alt="Marcus Profile">
+                <h2>Marcus Johnson</h2>
+                <p>Digital Marketing Manager</p>
+            </div>
+            <div class="cv-content">
+                <h3 class="section-title">Experience</h3>
+                <div class="cv-item">
+                    <h4>Growth Dynamics</h4>
+                    <span class="date">2019 - Present</span>
+                    <p>Managed multi-million dollar ad spend and increased overall ROI by 45% YoY.</p>
+                </div>
+                <div class="cv-item">
+                    <h4>Brandify Media</h4>
+                    <span class="date">2015 - 2019</span>
+                    <p>Spearheaded SEO campaigns and grew organic traffic for e-commerce brands.</p>
+                </div>
+
+                <h3 class="section-title">Education</h3>
+                <div class="cv-item">
+                    <h4>M.S. Marketing Analytics</h4>
+                    <span class="date">NYU Stern | 2015</span>
+                </div>
+
+                <h3 class="section-title">Skills</h3>
+                <div class="skills-container">
+                    <span class="skill-tag">SEO/SEM</span>
+                    <span class="skill-tag">Google Ads</span>
+                    <span class="skill-tag">Copywriting</span>
+                    <span class="skill-tag">Data Analysis</span>
+                    <span class="skill-tag">HubSpot</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
